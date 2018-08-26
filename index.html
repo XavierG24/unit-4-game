@@ -3,54 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/images">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+
     <div class="main-container">
         <header>
             <h1>Crystals Collector!</h1>
         </header>
         <div class="rules">
             <p>You will be given a random number at the start of the game.</p>
-            <br/>
+
             <p>There are four crystals below. By clicking on a crystal, you will add a specific amount to your total score.</p>
-            <br/>
+
             <p>You win the game by matching your total score to the Random number. You lose the game if your total score
                 goes above the random number.</p>
-            <br/>
+
             <p>The value of each crystal is hidden from you until you click on it.</p>
-            <br/>
+
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
-            <br/>
-        </div>
-
-        <div class="random-number-container">
-            <!-- <p>Match this number!</p> -->
-            <h2 id="random-number"></h2>
-        </div>
-        <div class="wins-losses">
-            <p>Wins: </p>
-            <p>Losses: </p>
 
         </div>
+        <h1>Guess this number: <span id="number-goal"></span></h1>
 
-        <div class="buttons">
-            <img src="#" alt="blue crystal">
-            <img src="#" alt="yellow crystal">
-            <img src="#" alt="green crystal">
-            <img src="#" alt="white crystal">
+        <div id="crystals">
         </div>
-        <div class="current-score">
-            <P>Your total score is:</P>
-        </div>
-        <div class="total-score">
-            <h2></h2>
-        </div>
-    </div>
+        <p>Wins: <span id="wins"></span></p>
+        <p>Losses: <span id="losses"></span></p>
+
+        <p>your total score is:</p>
+        <h3 id="current-score"></h3>
+
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
